@@ -1,0 +1,39 @@
+<% include ./partials/header.ejs %>
+<div
+  class="w-full h-screen bg-zinc-300 bg-cover bg-[url('https://images.unsplash.com/photo-1621717672978-5177ff1d283b?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] flex items-center justify-center"
+>
+  <div class="w-96 h-[60vh] bg-zinc-100 px-4 py-5 rounded-md">
+    <h1
+      class="text-3xl tracking-tighter capitalize leading-none text-center font-semibold text-zinc-700"
+    >
+      Welcome to pinterest.
+    </h1>
+    <form action="/login" method="post">
+      <input
+        class="block mt-2 w-full px-3 py-2"
+        type="text"
+        name="username"
+        placeholder="username"
+      />
+      <input
+        class="block mt-2 w-full px-3 py-2"
+        type="password"
+        name="password"
+        placeholder="password"
+      />
+      <input
+        class="block mt-2 w-full px-3 py-2 bg-red-600 text-white rounded-full"
+        type="submit"
+        value="Login"
+      />
+      <a class="mt-4 font-semibold" href="/register">Don't have account</a>
+      <p
+        class="text-center capitalize leading-none font-semibold text-zinc-700 mt-4"
+      >
+        Hey this is the pinnterst login form and this is the clone of the
+        pinterst so that ignore the the this is nor pintertest
+      </p>
+    </form>
+  </div>
+</div>
+<% include ./partials/footer.ejs %>
